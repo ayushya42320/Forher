@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Letter to the Cutest Notification</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Pacifico&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #fff0f6;
+      color: #4a4a4a;
+      padding: 30px;
+      max-width: 700px;
+      margin: auto;
+      line-height: 1.8;
+      position: relative;
+      overflow-x: hidden;
+    }
+    h1 {
+      font-family: 'Pacifico', cursive;
+      text-align: center;
+      color: #d14a7c;
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    p {
+      font-size: 1.1rem;
+      margin: 1em 0;
+      color: #5a5a5a;
+    }
+    .image {
+      display: block;
+      margin: 20px auto;
+      max-width: 80%;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
+    .poem {
+      background: #ffeef2;
+      border-left: 5px solid #d14a7c;
+      padding: 20px;
+      margin: 20px 0;
+      font-style: italic;
+      font-size: 1.1rem;
+      color: #333;
+      border-radius: 8px;
+    }
+    .signature {
+      margin-top: 40px;
+      font-weight: bold;
+      font-size: 1.2rem;
+      text-align: right;
+      color: #d14a7c;
+    }
+    .highlight {
+      color: #d14a7c;
+      font-weight: bold;
+    }
+
+    /* Floating hearts */
+    .heart {
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background: #ff8fa3;
+      transform: rotate(45deg);
+      animation: floatUp 8s infinite ease-in;
+    }
+    .heart::before,
+    .heart::after {
+      content: '';
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background: #ff8fa3;
+      border-radius: 50%;
+    }
+    .heart::before {
+      top: -10px;
+      left: 0;
+    }
+    .heart::after {
+      left: -10px;
+      top: 0;
+    }
+    @keyframes floatUp {
+      0% {
+        transform: translateY(0) rotate(45deg);
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(-100vh) rotate(45deg);
+        opacity: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>To the cutest notification I get,</h1>
+
+  <p>I hope you're doing pretty fine after all this shifting to a new place and all — that's a sudden change, I know, and also literally near your birthday. <span class="highlight">THAT SUCKS!</span></p>
+  <p>But my advice? Chill. It's kinda hard but yup, you’ve gotta do that.</p>
+  <p>You know when we met on that shitty website? It was <strong>17th of June 2024</strong>.</p>
+  <p>Yup, I didn't remember either. Had to go through the diary I used to blabber about a lot.</p>
+  <p>It’s kind of funny how someone can start as just a name on a screen and slowly become someone you genuinely care about. We haven’t known each other forever, but what we’ve had so far has been fun, unexpected, and honestly something I look forward to.</p>
+
+  <p>I can't be there in person (deadly-sadly). No IRL surprises, nor cakes, no ghummi-ghummi, no flowers, no hugs, nor anything. So I came up with this. A small surprise like this can make you smile. AND I WAS RIGHT. LIKE HELL — LOOK AT YOUUU BUAHHAHAHAHA!</p>
+
+  <p>But ahh that hurts. I wish I could be there — like really. I’ll come someday for sure. And Pune is a good place… until you forget about the garmii. I feel bad for Pune wale — it's gonna be hotter now (cheesy right!)</p>
+
+  <p>I just wanted to make you smile — you deserve to feel special every day. I’m sorry I did just this today. But today it’s a must that you feel special, right? Everyone must. So here’s me, being a little cheesy and doing something I wouldn’t do for just anyone — but for someone special.</p>
+
+  <p>I'm literally having all the memories come flooding in (we don't have much, ik) but still. And lots of thoughts too, like you’ll be old enough someday to tell your grandkids:</p>
+  <p><em>"Long long time ago, there lived a someone who was someone and..."</em> (I can't think of anything.)</p>
+
+  <p>You remember this?</p>
+  <img src="https://i.ibb.co/SDLk9mSc/photo2.jpg" alt="Fun photo together" class="image" />
+
+  <p>Yup. We did good shits together.</p>
+
+  <p>You remember I drew you once?</p>
+  <img src="https://i.ibb.co/0VrfSY7w/photo1.jpg" alt="Sketch I drew of you" class="image" />
+
+  <p>(I’m not good at it, but you’re perfect.)</p>
+
+  <div class="poem">
+    “Postcards to You”<br/>
+    On stardust trails and skies so blue,<br/>
+    I send my thoughts as postcards to you.<br/>
+    A whisper of warmth, a dash of delight,<br/>
+    Wrapped in wishes, glowing bright.<br/>
+    Though miles stretch far and moments hide,<br/>
+    Know I’m cheering from the other side.<br/>
+    Happy Birthday, to the soul that shines<br/>
+    You’re magic, in the simplest lines.
+  </div>
+
+  <div class="poem">
+    “From Me to the Mystery”<br/>
+    You’re a spark I didn’t see coming,<br/>
+    A notification that kept my heart humming.<br/>
+    From random chats to secret smiles,<br/>
+    You made the distance worth the miles.<br/>
+    So here’s a wish wrapped soft and true,<br/>
+    For the brightest day, just made for you.<br/>
+    I might be far, but look around<br/>
+    My care for you is all around.
+  </div>
+
+  <section id="future-you">
+    <h2 style="text-align:center; color:#d14a7c; font-family:'Poppins', sans-serif; margin-top: 40px;">A Glimpse into the Future</h2>
+    <div style="text-align:center; margin-top:20px;">
+      <img src="https://i.ibb.co/HDpzLnmx/IMG-4767.jpg" alt="Old Filter Fun" style="max-width: 250px; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+      <p style="font-style: italic; color: #555; margin-top:10px;">Still the cutest notification — even in 2085!</p>
+    </div>
+  </section>
+
+  <p>In the end, I hope your day is full of good things, real laughs, and people who make you feel loved — even if one of them is just a guy sending you this from maybe 750 kilometres away.</p>
+
+  <p>Happy Birthday.</p>
+
+  <p class="signature">
+    PS: IF YOU’RE READING THIS AGAIN AFTER A LONG TIME IN CASE YOU SAVED IT,<br/>
+    HOW YOU DOIN OLD LADYY??!<br/>
+    — a notification.
+  </p>
+
+  <!-- Floating hearts -->
+  <script>
+    for (let i = 0; i < 25; i++) {
+      const heart = document.createElement("div");
+      heart.className = "heart";
+      heart.style.left = Math.random() * 100 + "vw";
+      heart.style.animationDuration = 4 + Math.random() * 4 + "s";
+      heart.style.opacity = Math.random();
+      document.body.appendChild(heart);
+    }
+  </script>
+</body>
+</html>
