@@ -1,5 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
+<div id="terminal" style="background:black; color:lime; font-family:'Courier New', monospace; padding:20px; height:100vh; display:flex; align-items:center; justify-content:center;">
+  <pre id="fakeTerminalText"></pre>
+</div>
+<script>
+  const lines = [
+    "> Accessing system...",
+    "> Bypassing firewalls...",
+    "> Decrypting emotions...",
+    "> Connection to HER established.",
+    "> Launching surprise in 3... 2... 1..."
+  ];
+  let index = 0;
+  let charIndex = 0;
+  const output = document.getElementById('fakeTerminalText');
+
+  function typeLine() {
+    if (index < lines.length) {
+      if (charIndex < lines[index].length) {
+        output.textContent += lines[index][charIndex++];
+        setTimeout(typeLine, 50);
+      } else {
+        output.textContent += '\n';
+        index++;
+        charIndex = 0;
+        setTimeout(typeLine, 500);
+      }
+    } else {
+      setTimeout(() => {
+        document.getElementById('terminal').style.display = 'none';
+        document.getElementById('mainPage').style.display = 'block';
+      }, 1000);
+    }
+  }
+
+  typeLine();
+</script>
+
+<div id="mainPage" style="display:none;">
+  <!-- Your existing "For Her" content goes here -->
+</div>
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -99,17 +140,17 @@
 <body>
   <h1>To the cutest notification I get,</h1>
 
-  <p>I hope you're doing pretty fine after all this shifting to a new place and all — that's a sudden change, I know, and also literally near your birthday. <span class="highlight">THAT SUCKS!</span></p>
+  <p>I hope you're doing pretty fine after all this shifting to a new place and all that's a sudden change, I know, and also literally near your birthday. <span class="highlight">THAT SUCKS!</span></p>
   <p>But my advice? Chill. It's kinda hard but yup, you’ve gotta do that.</p>
   <p>You know when we met on that shitty website? It was <strong>17th of June 2024</strong>.</p>
   <p>Yup, I didn't remember either. Had to go through the diary I used to blabber about a lot.</p>
   <p>It’s kind of funny how someone can start as just a name on a screen and slowly become someone you genuinely care about. We haven’t known each other forever, but what we’ve had so far has been fun, unexpected, and honestly something I look forward to.</p>
 
-  <p>I can't be there in person (deadly-sadly). No IRL surprises, nor cakes, no ghummi-ghummi, no flowers, no hugs, nor anything. So I came up with this. A small surprise like this can make you smile. AND I WAS RIGHT. LIKE HELL — LOOK AT YOUUU BUAHHAHAHAHA!</p>
+  <p>I can't be there in person (deadly-sadly). No IRL surprises, nor cakes, no ghummi-ghummi, no flowers, no hugs, nor anything. So I came up with this. A small surprise like this can make you smile. AND I WAS RIGHT. LIKE HELL LOOK AT YOUUU BUAHHAHAHAHA!</p>
 
-  <p>But ahh that hurts. I wish I could be there — like really. I’ll come someday for sure. And Pune is a good place… until you forget about the garmii. I feel bad for Pune wale — it's gonna be hotter now (cheesy right!)</p>
+  <p>But ahh that hurts. I wish I could be there like really. I’ll come someday for sure. And Pune is a good place… until you forget about the garmii. I feel bad for Pune wale it's gonna be hotter now (cheesy right!)</p>
 
-  <p>I just wanted to make you smile — you deserve to feel special every day. I’m sorry I did just this today. But today it’s a must that you feel special, right? Everyone must. So here’s me, being a little cheesy and doing something I wouldn’t do for just anyone — but for someone special.</p>
+  <p>I just wanted to make you smile you deserve to feel special every day. I’m sorry I did just this today. But today it’s a must that you feel special, right? Everyone must. So here’s me, being a little cheesy and doing something I wouldn’t do for just anyone but for someone special.</p>
 
   <p>I'm literally having all the memories come flooding in (we don't have much, ik) but still. And lots of thoughts too, like you’ll be old enough someday to tell your grandkids:</p>
   <p><em>"Long long time ago, there lived a someone who was someone and..."</em> (I can't think of anything.)</p>
@@ -147,8 +188,16 @@
     I might be far, but look around<br/>
     My care for you is all around.
   </div>
-
-  <section id="future-you">
+  
+  <div class="audio-container" style="margin-top: 30px; text-align: center;">
+  <p><strong>Voice Note — Just press play:</strong></p>
+  <audio controls style="width: 100%; max-width: 500px;">
+    <source src="https://media.vocaroo.com/mp3/11uiehq8hTJE" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+</div>
+  
+    <section id="future-you">
     <h2 style="text-align:center; color:#d14a7c; font-family:'Poppins', sans-serif; margin-top: 40px;">A Glimpse into the Future</h2>
     <div style="text-align:center; margin-top:20px;">
       <img src="https://i.ibb.co/HDpzLnmx/IMG-4767.jpg" alt="Old Filter Fun" style="max-width: 250px; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
@@ -165,6 +214,44 @@
     HOW YOU DOIN OLD LADYY??!<br/>
     — a notification.
   </p>
+<div style="text-align: center; margin: 40px 0; background: #fff0f6; padding: 25px; border-radius: 15px; box-shadow: 0 5px 15px rgba(209,74,124,0.1); border: 2px dashed #d14a7c;">
+  <h3 style="color: #d14a7c; font-family: 'Pacifico', cursive; margin-bottom: 15px;">🎵 Our Collaborative Playlist</h3>
+  
+  <!-- Spotify Player -->
+  <iframe src="https://open.spotify.com/embed/playlist/5X8XQtSHtcUUlYA6hNJ79R?utm_source=generator&theme=0" 
+          width="100%" 
+          height="380" 
+          style="border-radius: 12px; border: 3px solid #ffcce0; margin-bottom: 20px;"
+          frameborder="0" 
+          allowfullscreen="" 
+          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+          loading="lazy">
+  </iframe>
+
+  <!-- Collab Invitation -->
+  <div style="background: #ffeef2; padding: 15px; border-radius: 10px; margin: 0 auto; max-width: 500px;">
+    <p style="margin-bottom: 15px; color: #5a5a5a;">yup heres our playlist!:</p>
+    <a href="https://open.spotify.com/playlist/5X8XQtSHtcUUlYA6hNJ79R?si=cmynpwSyTma1d_qZVJp_YQ" 
+       target="_blank"
+       style="display: inline-block;
+              background: #1DB954; /* Spotify green */
+              color: white;
+              padding: 12px 25px;
+              border-radius: 50px;
+              text-decoration: none;
+              font-weight: bold;
+              font-size: 1.1rem;
+              box-shadow: 0 4px 10px rgba(29, 185, 84, 0.3);
+              transition: transform 0.3s;"
+       onmouseover="this.style.transform='scale(1.05)'"
+       onmouseout="this.style.transform='scale(1)'">
+       ✨ collab
+    </a>
+    <p style="margin-top: 15px; font-size: 0.9em; color: #d14a7c;"><em>(You'll need to follow the playlist first)</em></p>
+  </div>
+</div>
+
+
 
   <!-- Floating hearts -->
   <script>
@@ -177,5 +264,6 @@
       document.body.appendChild(heart);
     }
   </script>
+  
 </body>
 </html>
