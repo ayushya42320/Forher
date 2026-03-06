@@ -4,39 +4,7 @@
 <div id="terminal" style="background:black; color:lime; font-family:'Courier New', monospace; padding:20px; height:100vh; display:flex; align-items:center; justify-content:center;">
   <pre id="fakeTerminalText"></pre>
 </div>
-<script>
-  const lines = [
-    "> Accessing system...",
-    "> Bypassing firewalls...",
-    "> Decrypting emotions...",
-    "> Connection to HER established.",
-    "> Launching surprise in 3... 2... 1..."
-  ];
-  let index = 0;
-  let charIndex = 0;
-  const output = document.getElementById('fakeTerminalText');
 
-  function typeLine() {
-    if (index < lines.length) {
-      if (charIndex < lines[index].length) {
-        output.textContent += lines[index][charIndex++];
-        setTimeout(typeLine, 50);
-      } else {
-        output.textContent += '\n';
-        index++;
-        charIndex = 0;
-        setTimeout(typeLine, 500);
-      }
-    } else {
-      setTimeout(() => {
-        document.getElementById('terminal').style.display = 'none';
-        document.getElementById('mainPage').style.display = 'block';
-      }, 1000);
-    }
-  }
-
-  typeLine();
-</script>
 
 <div id="mainPage" style="display:none;">
   <!-- Your existing "For Her" content goes here -->
