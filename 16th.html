@@ -121,8 +121,22 @@
     }
 
   </style>
+
+  <script>
+const menuBtn = document.getElementById("menu-btn");
+const sideMenu = document.getElementById("side-menu");
+
+menuBtn.addEventListener("click", () => {
+  sideMenu.classList.toggle("active");
+});
+</script>
+
+  
 </head>
-  <!-- Menu Button -->
+ 
+<body>
+
+   <!-- Menu Button -->
 <button id="menu-btn">☰</button>
 
 <!-- Sidebar Menu -->
@@ -131,7 +145,6 @@
   <a href="16th.html"> 16th</a>
 </div>
 
-<body>
 
 <div class="box">
 
