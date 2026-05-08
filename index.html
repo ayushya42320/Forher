@@ -3,8 +3,8 @@
 
 
 
-
-  <!-- Your existing "For Her" content goes here -->
+<div id="mainPage" style="display:none;">
+  
 </div>
 <head>
   <meta charset="UTF-8" />
@@ -23,6 +23,50 @@
       position: relative;
       overflow-x: hidden;
     }
+/* menu button */
+#menu-btn {
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  font-size: 24px;
+  background: none;
+  border: none;
+  color:#d14a7c ;
+  z-index: 1001;
+  cursor: pointer;
+}
+
+/* sidebar menu */
+#side-menu {
+  position: fixed;
+  top: 0;
+  left: -250px; /* hidden initially */
+  width: 250px;
+  height: 100%;
+  background: #111;
+  padding-top: 60px;
+  transition: left 0.4s ease; /* smooth animation */
+  z-index: 1000;
+}
+
+/* active state */
+#side-menu.active {
+  left: 0;
+}
+
+/* menu links */
+#side-menu a {
+  display: block;
+  padding: 15px;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+#side-menu a:hover {
+  background: #333;
+}
+
     h1 {
       font-family: 'Pacifico', cursive;
       text-align: center;
@@ -64,7 +108,7 @@
       font-weight: bold;
     }
 
-    /* Floating hearts */
+    
     .heart {
       position: absolute;
       width: 20px;
@@ -103,6 +147,19 @@
   </style>
 </head>
 <body>
+  <!-- Menu Button -->
+<button id="menu-btn">☰</button>
+
+<!-- Sidebar Menu -->
+<div id="side-menu">
+  <a href="#">15th</a>
+  <a href="#">16th</a>
+  <a href="#">idk</a>
+  
+</div>
+
+
+
   <h1>To the cutest notification I get,</h1>
 
   <p>I hope you're doing pretty fine after all this shifting to a new place and all that's a sudden change, I know, and also literally near your birthday. <span class="highlight">THAT SUCKS!</span></p>
@@ -193,7 +250,7 @@
           loading="lazy">
   </iframe>
 
-  <!-- Collab Invitation -->
+  
   <div style="background: #ffeef2; padding: 15px; border-radius: 10px; margin: 0 auto; max-width: 500px;">
     <p style="margin-bottom: 15px; color: #5a5a5a;">yup heres our playlist!:</p>
     <a href="https://open.spotify.com/playlist/5X8XQtSHtcUUlYA6hNJ79R?si=cmynpwSyTma1d_qZVJp_YQ" 
@@ -216,9 +273,17 @@
   </div>
 </div>
 
+<script>
+const menuBtn = document.getElementById("menu-btn");
+const sideMenu = document.getElementById("side-menu");
+
+menuBtn.addEventListener("click", () => {
+  sideMenu.classList.toggle("active");
+});
+</script>
 
 
-  <!-- Floating hearts -->
+  
   <script>
     for (let i = 0; i < 25; i++) {
       const heart = document.createElement("div");
