@@ -1,0 +1,278 @@
+<html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Pacifico&display=swap" rel="stylesheet">
+
+<style>
+body{
+    font-family:'Poppins',sans-serif;
+    background:#fff7f9;
+    color:#555;
+    max-width:700px;
+    margin:auto;
+    padding:30px;
+    line-height:1.9;
+    overflow-x:hidden;
+    position:relative;
+}
+
+h1{
+    font-family:'Pacifico',cursive;
+    text-align:center;
+    color:#d14a7c;
+    font-size:2.7rem;
+    margin-bottom:30px;
+}
+
+p{
+    font-size:1.1rem;
+    margin:18px 0;
+}
+
+.letter{
+    background:white;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.08);
+}
+
+
+
+
+.signature{
+    text-align:right;
+    margin-top:50px;
+    color:#d14a7c;
+    font-weight:bold;
+}
+
+.final-line{
+    text-align:center;
+    font-size:1.5rem;
+    color:#d14a7c;
+    margin-top:40px;
+    opacity:0;
+    animation:fadeIn 3s ease forwards;
+    animation-delay:3s;
+}
+
+
+
+.heart{
+    position:fixed;
+    width:15px;
+    height:15px;
+    background:#ff8fa3;
+    transform:rotate(45deg);
+    opacity:.5;
+    animation:floatUp linear infinite;
+    z-index:-1;
+}
+
+.heart::before,
+.heart::after{
+    content:'';
+    position:absolute;
+    width:15px;
+    height:15px;
+    background:#ff8fa3;
+    border-radius:50%;
+}
+
+.heart::before{
+    top:-8px;
+}
+
+.heart::after{
+    left:-8px;
+}
+
+@keyframes floatUp{
+    from{
+        transform:translateY(100vh) rotate(45deg);
+        opacity:.5;
+    }
+    to{
+        transform:translateY(-100px) rotate(45deg);
+        opacity:0;
+    }
+}
+
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform:translateY(20px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+#typewriter{
+    color:#d14a7c;
+    font-weight:bold;
+    min-height:40px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="letter">
+
+    <p>sorry</p>
+
+<p>I never know where to start with things like this lol.</p>
+
+<p>
+I'm sorry for all the ignoring and ghosting.
+I know it's not the right thing to do, but honestly,
+I couldn't think of any other way.
+I can't keep pretending anymore.
+</p>
+
+<p>
+I never told you any of this because I'm a coward.
+I was scared it would change whatever we had,
+and I didn't want to lose that.
+</p>
+
+<p>
+But I don't think I can keep hiding it.
+</p>
+
+<p>
+I still remember when you asked me about validation
+and I said it wasn't important.
+</p>
+
+<p>I was wrong.</p>
+
+<p>Maybe I was lying to myself too.</p>
+
+<p>I never wanted to hurt you.</p>
+
+<p> i love you yaar</p>
+
+<p>
+Maybe it doesn't mean much to you,
+but it means everything to me.
+</p>
+
+<p>
+Two birthdays together might not seem like a lot,
+but they're enough for me to know that I can't stop loving you.
+</p>
+
+<p>
+The only good thing I can do now is love you from far away,
+like I always have.
+</p>
+
+<p>So I'm taking one more step back.</p>
+
+<p>
+Not because of anything you did.
+This isn't about you.
+</p>
+
+<p>
+It's about me.
+</p>
+
+<p>
+You're one of the best things that ever happened to me.
+</p>
+
+<div class="poem">
+This is who I really am.<br><br>
+
+Not different from any other guy.<br>
+Just someone who's in love.<br><br>
+
+Someone who could never love you enough.<br><br>
+
+Someone who dreams about green grass,<br>
+yellow flowers,<br>
+and somehow always finds you somewhere in between.<br><br>
+
+Someone who tried.
+</div>
+
+<p>
+I don't know if you'll ever read this.
+</p>
+
+<p>
+And honestly, what I'm doing probably isn't the right call.
+</p>
+
+<p>
+You can call me dumb for it.
+</p>
+
+<p>
+I just couldn't think of a better way.
+</p>
+
+<p>
+So I'm sorry.
+</p>
+
+<p>
+Again.
+</p>
+
+<div class="poem">
+P.S.<br><br>
+
+If we ever talk again,
+don't tell me you know any of this.<br><br>
+
+Let me overthink it.<br>
+Let me torture myself wondering if you ever read it.<br><br>
+
+I deserve that much.
+</div>
+
+<p>
+And you know,
+I had a wishlist.
+</p>
+
+<p>
+A lot of things on it are still unchecked.
+</p>
+
+<p>
+But if there's one thing I'm glad happened...
+</p>
+
+
+<p class="signature">
+— a notification.
+</p>
+
+</div>
+
+
+
+
+<script>
+for(let i=0;i<8;i++){
+    const heart=document.createElement("div");
+    heart.className="heart";
+    heart.style.left=Math.random()*100+"vw";
+    heart.style.animationDuration=(10+Math.random()*10)+"s";
+    heart.style.animationDelay=Math.random()*5+"s";
+    document.body.appendChild(heart);
+}
+</script>
+
+</body>
+</html>
